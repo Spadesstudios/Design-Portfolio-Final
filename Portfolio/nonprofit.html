@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nonprofit Initiative — Kameron Nelson</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .nav-case {
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 64px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .nav-case a {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--ink-light);
+      transition: color 0.2s;
+    }
+    .nav-case a:hover { color: var(--gold); }
+    .placeholder-note {
+      background: var(--cream-dark);
+      border-left: 3px solid var(--gold);
+      padding: 16px 20px;
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--ink-light);
+      margin-bottom: 40px;
+      letter-spacing: 0.04em;
+    }
+    .placeholder-note strong { color: var(--gold); }
+    .pillar-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+      margin-top: 24px;
+    }
+    .pillar-item {
+      background: var(--cream);
+      padding: 28px;
+    }
+    .pillar-icon {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    .pillar-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+    .pillar-desc {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--ink-light);
+      line-height: 1.65;
+    }
+    @media(max-width:900px){
+      .nav-case{padding:20px 24px; flex-wrap:wrap; gap:12px;}
+      .pillar-grid{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">K<span>.</span>N</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#work" class="active">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="about.html#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="this.parentElement.querySelector('.nav-links').style.display = this.parentElement.querySelector('.nav-links').style.display === 'flex' ? 'none' : 'flex'">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+  <a class="back-link" href="index.html">← Back to All Work</a>
+
+  <div class="case-hero fade-in">
+    <div class="case-hero-left">
+      <p class="case-kicker">Nonprofit — Founder</p>
+      <!-- UPDATE: Replace [Nonprofit Name] with actual name -->
+      <h1 class="case-title"><em>[Nonprofit<br>Name]</em></h1>
+      <p class="case-subtitle">Founded and led a nonprofit organization from inception — handling governance structures, brand identity, program design, fundraising strategy, and community outreach.</p>
+    </div>
+    <div>
+      <div class="case-meta">
+        <div class="case-meta-item">
+          <div class="case-meta-label">Type</div>
+          <div class="case-meta-value">Nonprofit — Founded</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Role</div>
+          <div class="case-meta-value">Founder & Executive Director</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Disciplines</div>
+          <div class="case-meta-value">Leadership, Branding, Product</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Status</div>
+          <!-- UPDATE: Add status -->
+          <div class="case-meta-value">Active</div>
+        </div>
+      </div>
+      <div style="margin-top:24px;">
+        <div class="role-tags">
+          <span class="tag">Nonprofit Leadership</span>
+          <span class="tag">Brand Identity</span>
+          <span class="tag">Program Design</span>
+          <span class="tag">Fundraising</span>
+          <span class="tag">Community Outreach</span>
+          <span class="tag">Governance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="case-body">
+
+    <div class="placeholder-note">
+      <strong>⚠ Editor's Note:</strong> Replace all bracketed placeholders — [Nonprofit Name], [mission], [year], and program details — with your actual information before publishing.
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Overview</div>
+      <div class="case-section-content">
+        <h3>The Mission</h3>
+        <p>[Nonprofit Name] was founded in [year] with a clear mission: [describe what the organization does and who it serves in 1-2 sentences]. The organization was built from the ground up — no inherited structure, no existing playbook — just a vision for what community could look like if organized with real intention.</p>
+        <p>As Founder and Executive Director, I was responsible for every dimension of the organization: establishing its legal structure, building the brand, designing programs, recruiting volunteers and board members, and driving the fundraising strategy that brought it to life.</p>
+
+        <div class="pull-quote">
+          <p>"A nonprofit is a product. The community it serves are the users. The mission is the north star. Everything else — governance, brand, programs — is how you get there."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Founding</div>
+      <div class="case-section-content">
+        <h3>Building the Organization from Zero</h3>
+        <p>Starting a nonprofit from scratch requires navigating a significant amount of legal, operational, and strategic complexity — simultaneously. My process was methodical: establish the legal and governance foundation first, build the brand, then design the programs.</p>
+        <ul>
+          <li>Filed for 501(c)(3) status and navigated the full IRS application process</li>
+          <li>Drafted organizational bylaws, board structure, and governance policies</li>
+          <li>Recruited founding board members and established board meeting cadence</li>
+          <li>Developed mission, vision, and values framework that guides all decisions</li>
+          <li>Built financial management systems including budgeting and reporting structures</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Brand & Identity</div>
+      <div class="case-section-content">
+        <h3>Creating a Brand that Serves the Mission</h3>
+        <p>Nonprofits often underinvest in brand — and pay for it in trust and donation rates. [Nonprofit Name] was designed with a professional, trustworthy brand presence that could hold its own against larger, established organizations in the space.</p>
+        <ul>
+          <li>Developed full brand identity: name, logo, color palette, typography, and visual system</li>
+          <li>Created brand voice guidelines aligned with the organization's community-first ethos</li>
+          <li>Designed all organizational collateral: letterhead, annual reports, donor materials</li>
+          <li>Built website and digital presence for community awareness and fundraising</li>
+          <li>Developed social media strategy and content calendar to grow community reach</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Programs</div>
+      <div class="case-section-content">
+        <h3>Program Pillars</h3>
+        <p>The organization's programs were designed around [core focus area]. Each pillar was scoped, resourced, and launched with clear outcomes and success metrics.</p>
+
+        <div class="pillar-grid">
+          <div class="pillar-item">
+            <div class="pillar-icon">🌱</div>
+            <div class="pillar-name">[Program 1]</div>
+            <div class="pillar-desc">[Describe your first program and its community impact in 2-3 sentences.]</div>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-icon">🤝</div>
+            <div class="pillar-name">[Program 2]</div>
+            <div class="pillar-desc">[Describe your second program and its community impact in 2-3 sentences.]</div>
+          </div>
+          <div class="pillar-item">
+            <div class="pillar-icon">📣</div>
+            <div class="pillar-name">[Program 3]</div>
+            <div class="pillar-desc">[Describe your third program and its community impact in 2-3 sentences.]</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Fundraising</div>
+      <div class="case-section-content">
+        <h3>Funding the Mission</h3>
+        <p>Fundraising is a product challenge: you're asking people to invest in an idea and trust that the organization will deliver on its mission. I approached fundraising with the same rigor I'd bring to a go-to-market strategy.</p>
+        <ul>
+          <li>Developed diversified funding model including grants, individual donors, and event revenue</li>
+          <li>Wrote and submitted grant applications to foundations and government programs</li>
+          <li>Built donor communication and stewardship strategy for long-term relationship development</li>
+          <li>Organized fundraising events to drive community engagement and financial support</li>
+          <li>Designed donor reporting and impact communication to maintain transparency and trust</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Impact</div>
+      <div class="case-section-content">
+        <h3>Community Outcomes</h3>
+        <div class="outcome-grid">
+          <div class="outcome-item">
+            <div class="outcome-number">[#]</div>
+            <div class="outcome-label">Community Members Served</div>
+          </div>
+          <div class="outcome-item">
+            <div class="outcome-number">[#]</div>
+            <div class="outcome-label">Programs Launched</div>
+          </div>
+          <div class="outcome-item">
+            <div class="outcome-number">[#]</div>
+            <div class="outcome-label">Volunteers Engaged</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="nav-case">
+    <a href="rapmvmnt.html">← Rapmvmnt</a>
+    <a href="apple-project.html">Next: Apple Project →</a>
+  </div>
+
+  <footer>
+    <span class="footer-name">Kameron Nelson</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <span class="footer-copy">© 2024 Kameron Nelson</span>
+  </footer>
+</main>
+
+</body>
+</html>

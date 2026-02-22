@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapmvmnt — Kameron Nelson</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .nav-case {
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 64px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .nav-case a {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--ink-light);
+      transition: color 0.2s;
+    }
+    .nav-case a:hover { color: var(--gold); }
+    .design-principles {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+      margin-top: 24px;
+    }
+    .principle-item {
+      background: var(--cream);
+      padding: 28px;
+      position: relative;
+    }
+    .principle-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px;
+      font-weight: 300;
+      color: var(--cream-dark);
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      line-height: 1;
+    }
+    .principle-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+    .principle-desc {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--ink-light);
+      line-height: 1.65;
+    }
+    @media(max-width:900px){
+      .nav-case{padding:20px 24px; flex-wrap:wrap; gap:12px;}
+      .design-principles{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">K<span>.</span>N</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#work" class="active">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="about.html#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="this.parentElement.querySelector('.nav-links').style.display = this.parentElement.querySelector('.nav-links').style.display === 'flex' ? 'none' : 'flex'">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+  <a class="back-link" href="index.html">← Back to All Work</a>
+
+  <div class="case-hero fade-in">
+    <div class="case-hero-left">
+      <p class="case-kicker">Venture No. 03 — Apparel & Culture</p>
+      <h1 class="case-title">Rap<em>mvmnt</em></h1>
+      <p class="case-subtitle">A culture-rooted apparel brand with a distinct visual identity — where graphic design meets community, and fashion becomes a vehicle for movement and expression.</p>
+    </div>
+    <div>
+      <div class="case-meta">
+        <div class="case-meta-item">
+          <div class="case-meta-label">Type</div>
+          <div class="case-meta-value">Founded Venture</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Role</div>
+          <div class="case-meta-value">Founder, Designer & Strategist</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Disciplines</div>
+          <div class="case-meta-value">Graphic Design, Branding, Strategy</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Status</div>
+          <div class="case-meta-value">Active</div>
+        </div>
+      </div>
+      <div style="margin-top:24px;">
+        <div class="role-tags">
+          <span class="tag">Apparel Design</span>
+          <span class="tag">Graphic Design</span>
+          <span class="tag">Brand Identity</span>
+          <span class="tag">Cultural Strategy</span>
+          <span class="tag">E-Commerce</span>
+          <span class="tag">Community Building</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="case-body">
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Overview</div>
+      <div class="case-section-content">
+        <h3>More Than a Brand — A Movement</h3>
+        <p>Rapmvmnt (read: "Rap Movement") was built as a cultural artifact — an apparel brand that exists at the intersection of hip-hop culture, visual art, and community identity. It's not just clothing; it's a statement of belonging, of movement, of shared values expressed through what you wear.</p>
+        <p>The intentional stylization of the name — dropping the vowel from "movement" — is itself a design choice: compact, typographically interesting, and immediately distinguishable. Everything about Rapmvmnt is intentional.</p>
+
+        <div class="pull-quote">
+          <p>"Apparel is wearable design. Every piece we put out is a graphic design project that someone carries with them into the world."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Brand Strategy</div>
+      <div class="case-section-content">
+        <h3>Identity Built on Culture</h3>
+        <p>Most apparel brands start with a product. Rapmvmnt started with a culture. The brand strategy was rooted in understanding who the community was, what they stood for, and how to create visual language that reflected and amplified their identity.</p>
+        <ul>
+          <li>Developed brand positioning that sits at the intersection of hip-hop culture and streetwear aesthetics</li>
+          <li>Defined the brand's cultural ethos: authenticity, expression, community, and forward motion</li>
+          <li>Built a content strategy that led with culture and community — not just product drops</li>
+          <li>Designed community engagement mechanics: artist collaborations, local events, and brand ambassador program</li>
+          <li>Created brand partnership framework for collaboration with artists, photographers, and creatives</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Graphic Design</div>
+      <div class="case-section-content">
+        <h3>Visual Language & Design System</h3>
+        <p>Graphic design is the core product at Rapmvmnt. Every piece of apparel starts with a visual concept — a graphic, a typographic treatment, a statement. Building a cohesive visual language across seasons and drops requires the same design systems thinking you'd apply to a digital product.</p>
+
+        <div class="design-principles">
+          <div class="principle-item">
+            <span class="principle-num">01</span>
+            <div class="principle-title">Typography First</div>
+            <div class="principle-desc">Custom type treatments and hand-lettered elements distinguish each collection and create ownable typographic moments.</div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">02</span>
+            <div class="principle-desc">Bold color stories that feel culturally current but timelessly wearable — built collection-by-collection with coherent palettes.</div>
+            <div class="principle-title">Color Intentionality</div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">03</span>
+            <div class="principle-title">Graphic Narrative</div>
+            <div class="principle-desc">Every graphic tells a story. From concept sketches to print-ready artwork, each design references the culture it's speaking to.</div>
+          </div>
+          <div class="principle-item">
+            <span class="principle-num">04</span>
+            <div class="principle-title">System Thinking</div>
+            <div class="principle-desc">Collections designed as cohesive sets — individual pieces work alone, but come alive when worn together as a system.</div>
+          </div>
+        </div>
+
+        <p style="margin-top: 32px;">Technical design work included:</p>
+        <ul>
+          <li>Full apparel graphics — original vector artwork, typography, and print-ready files</li>
+          <li>Lookbook photography direction and layout design</li>
+          <li>Hang tag, label, and packaging design</li>
+          <li>Digital and social campaign asset creation</li>
+          <li>E-commerce storefront design and product photography direction</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Operations</div>
+      <div class="case-section-content">
+        <h3>From Design to Delivery</h3>
+        <p>Running an apparel business requires managing a complex supply chain — from design through manufacturing, quality control, inventory, fulfillment, and customer experience. I built and managed the full operation.</p>
+        <ul>
+          <li>Managed full print-on-demand and custom manufacturing pipeline</li>
+          <li>Vendor sourcing for blank garments, printing, and embroidery</li>
+          <li>Inventory management and drop release strategy to create demand and scarcity</li>
+          <li>E-commerce platform setup, product pages, and checkout experience optimization</li>
+          <li>Customer experience design from purchase through delivery — including packaging and unboxing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Marketing</div>
+      <div class="case-section-content">
+        <h3>Movement-Led Marketing</h3>
+        <p>Rapmvmnt's marketing philosophy is grounded in authenticity over advertising. Rather than paying for attention, the brand earns it by being genuinely embedded in the culture it serves — showing up at events, collaborating with artists, and producing content that people want to share because it resonates, not because it's promoted.</p>
+        <ul>
+          <li>Social content strategy built around community storytelling and cultural moments</li>
+          <li>Drop release campaigns that built anticipation and community engagement pre-launch</li>
+          <li>Artist and photographer collaboration for organic brand exposure</li>
+          <li>Event activations at community and music events for physical brand presence</li>
+          <li>Email and SMS marketing flows for direct-to-consumer relationship building</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="nav-case">
+    <a href="kuntacameo.html">← KuntaCameo</a>
+    <a href="nonprofit.html">Next: Nonprofit →</a>
+  </div>
+
+  <footer>
+    <span class="footer-name">Kameron Nelson</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <span class="footer-copy">© 2024 Kameron Nelson</span>
+  </footer>
+</main>
+
+</body>
+</html>

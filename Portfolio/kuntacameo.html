@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KuntaCameo — Kameron Nelson</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .offering-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+      margin-top: 24px;
+    }
+    .offering-item {
+      background: var(--cream);
+      padding: 28px;
+    }
+    .offering-icon {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+    .offering-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+    .offering-desc {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--ink-light);
+      line-height: 1.65;
+    }
+    .nav-case {
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 64px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .nav-case a {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--ink-light);
+      transition: color 0.2s;
+    }
+    .nav-case a:hover { color: var(--gold); }
+    @media(max-width:900px){
+      .offering-grid{grid-template-columns:1fr;}
+      .nav-case{padding:20px 24px; flex-wrap:wrap; gap:12px;}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">K<span>.</span>N</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#work" class="active">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="about.html#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="this.parentElement.querySelector('.nav-links').style.display = this.parentElement.querySelector('.nav-links').style.display === 'flex' ? 'none' : 'flex'">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+  <a class="back-link" href="index.html">← Back to All Work</a>
+
+  <div class="case-hero fade-in">
+    <div class="case-hero-left">
+      <p class="case-kicker">Venture No. 02 — Photography & Media</p>
+      <h1 class="case-title"><em>Kunta</em>Cameo</h1>
+      <p class="case-subtitle">A full-service photography, videography, and equipment rental operation — built with an intentional brand presence and an operator-first systems approach.</p>
+    </div>
+    <div>
+      <div class="case-meta">
+        <div class="case-meta-item">
+          <div class="case-meta-label">Type</div>
+          <div class="case-meta-value">Founded Venture</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Role</div>
+          <div class="case-meta-value">Founder & Lead Photographer</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Disciplines</div>
+          <div class="case-meta-value">Photography, Branding, UI/UX</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Status</div>
+          <div class="case-meta-value">Active</div>
+        </div>
+      </div>
+      <div style="margin-top:24px;">
+        <div class="role-tags">
+          <span class="tag">Photography</span>
+          <span class="tag">Videography</span>
+          <span class="tag">Equipment Rental</span>
+          <span class="tag">Brand Identity</span>
+          <span class="tag">UI/UX</span>
+          <span class="tag">Business Development</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="case-body">
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Overview</div>
+      <div class="case-section-content">
+        <h3>Concept &amp; Vision</h3>
+        <p>KuntaCameo was founded on a simple premise: the creative market deserved a media service that was as intentional about its brand as its work. Too many photography businesses treat their own brand as an afterthought — KuntaCameo was built differently, with a distinct identity that stood apart and attracted clients who valued both quality and aesthetic sensibility.</p>
+        <p>The business spans three service verticals: photography, videography, and equipment rental — making it a versatile, multi-revenue creative studio rather than a single-service freelance operation.</p>
+
+        <div class="pull-quote">
+          <p>"Your brand is your first project. If you can't brand yourself well, why would a client trust you to brand their moment?"</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Brand Identity</div>
+      <div class="case-section-content">
+        <h3>Building the KuntaCameo Brand</h3>
+        <p>The name itself carries weight — it's bold, memorable, and intentionally unexpected. The brand identity was designed to reflect that same energy: confident without being loud, creative without being chaotic.</p>
+        <ul>
+          <li>Developed full logo suite including wordmark, icon mark, and usage system</li>
+          <li>Defined brand photography aesthetic — lighting philosophy, color grading, compositional style</li>
+          <li>Created social media templates and content frameworks to maintain brand consistency across platforms</li>
+          <li>Designed marketing materials: rate cards, client-facing proposals, and service guides</li>
+          <li>Wrote brand voice and tone guidelines to ensure consistent client communication</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Services</div>
+      <div class="case-section-content">
+        <h3>Three-Vertical Business Model</h3>
+        <p>Structuring KuntaCameo as a three-service operation was a deliberate business strategy — it created multiple revenue streams, enabled cross-selling to existing clients, and positioned the brand as a comprehensive creative resource rather than a niche contractor.</p>
+
+        <div class="offering-grid">
+          <div class="offering-item">
+            <div class="offering-icon">📷</div>
+            <div class="offering-name">Photography</div>
+            <div class="offering-desc">Portrait, event, editorial, and commercial photography. Full session management from pre-shoot creative direction through final delivery and licensing.</div>
+          </div>
+          <div class="offering-item">
+            <div class="offering-icon">🎬</div>
+            <div class="offering-name">Videography</div>
+            <div class="offering-desc">Event coverage, promotional video, short-form content, and brand films. End-to-end from concept and scripting through shooting and post-production.</div>
+          </div>
+          <div class="offering-item">
+            <div class="offering-icon">🎥</div>
+            <div class="offering-name">Equipment Rental</div>
+            <div class="offering-desc">Camera bodies, lenses, lighting rigs, and accessories available for daily and weekly rental. Inventory management system built in-house.</div>
+          </div>
+          <div class="offering-item">
+            <div class="offering-icon">✏️</div>
+            <div class="offering-name">Creative Direction</div>
+            <div class="offering-desc">Pre-production planning, mood boarding, shot list development, and on-set or on-location direction for branded content campaigns.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">UI/UX</div>
+      <div class="case-section-content">
+        <h3>Digital Presence & Client Experience</h3>
+        <p>The digital experience for KuntaCameo was designed with the same intentionality as the visual brand. A photography service's website is itself a portfolio piece — it has to perform as well as it looks.</p>
+        <ul>
+          <li>Designed and built the KuntaCameo website from wireframe to launch — prioritizing portfolio presentation, inquiry flow, and rental booking experience</li>
+          <li>Mapped the full client journey: discovery → inquiry → proposal → booking → delivery → review</li>
+          <li>Built client portal concept for streamlined file delivery and contract management</li>
+          <li>Designed rental request and availability flow for equipment services</li>
+          <li>Optimized for mobile, where the majority of inbound inquiries originated</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Operations</div>
+      <div class="case-section-content">
+        <h3>Running a Multi-Service Creative Studio</h3>
+        <p>Managing a three-service creative business requires more operational rigor than most people expect. Scheduling conflicts, equipment tracking, client deliverable pipelines, and revenue management all need systems to function at scale.</p>
+        <ul>
+          <li>Built equipment inventory tracking and maintenance schedule for rental assets</li>
+          <li>Developed booking and scheduling system to prevent conflicts across service lines</li>
+          <li>Created standardized client onboarding process including intake forms, contracts, and payment workflows</li>
+          <li>Established pricing structures for each service vertical with clear scope definitions</li>
+          <li>Post-project review and client follow-up process to drive referrals and repeat bookings</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Outcomes</div>
+      <div class="case-section-content">
+        <h3>Results</h3>
+        <div class="outcome-grid">
+          <div class="outcome-item">
+            <div class="outcome-number">3</div>
+            <div class="outcome-label">Revenue Streams</div>
+          </div>
+          <div class="outcome-item">
+            <div class="outcome-number">100%</div>
+            <div class="outcome-label">Self-Built Brand</div>
+          </div>
+          <div class="outcome-item">
+            <div class="outcome-number">Multi</div>
+            <div class="outcome-label">Industry Clients</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="nav-case">
+    <a href="spades.html">← Spades</a>
+    <a href="rapmvmnt.html">Next: Rapmvmnt →</a>
+  </div>
+
+  <footer>
+    <span class="footer-name">Kameron Nelson</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <span class="footer-copy">© 2024 Kameron Nelson</span>
+  </footer>
+</main>
+
+</body>
+</html>

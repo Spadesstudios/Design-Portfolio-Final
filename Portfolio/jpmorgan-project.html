@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile Banking Redesign — Kameron Nelson</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .nav-case {
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 64px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .nav-case a {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--ink-light);
+      transition: color 0.2s;
+    }
+    .nav-case a:hover { color: var(--gold); }
+    .flow-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+      margin-top: 24px;
+    }
+    .flow-step {
+      background: var(--cream);
+      padding: 20px 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+    }
+    .flow-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      flex-shrink: 0;
+      width: 36px;
+    }
+    .flow-content h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 4px;
+    }
+    .flow-content p {
+      font-size: 13px;
+      font-weight: 300;
+      color: var(--ink-light);
+      line-height: 1.6;
+    }
+    .metrics-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+      margin-top: 24px;
+    }
+    .metric-item {
+      background: var(--cream);
+      padding: 24px;
+      text-align: center;
+    }
+    .metric-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 42px;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .metric-label {
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      line-height: 1.5;
+    }
+    @media(max-width:900px){
+      .nav-case{padding:20px 24px; flex-wrap:wrap; gap:12px;}
+      .metrics-strip{grid-template-columns:1fr 1fr;}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">K<span>.</span>N</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#work" class="active">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="about.html#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="this.parentElement.querySelector('.nav-links').style.display = this.parentElement.querySelector('.nav-links').style.display === 'flex' ? 'none' : 'flex'">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+  <a class="back-link" href="index.html">← Back to All Work</a>
+
+  <!-- NDA DISCLAIMER -->
+  <div class="nda-banner">
+    <div class="nda-icon">⚖</div>
+    <div class="nda-text">
+      <strong>Confidential Engagement — NDA in Effect.</strong> This case study covers only high-level process and approach. Client-specific details, proprietary design systems, internal banking infrastructure, partner bank identity, screen-level designs, and any financial data are protected under a non-disclosure agreement and are not shared here.
+    </div>
+  </div>
+
+  <div class="case-hero fade-in">
+    <div class="case-hero-left">
+      <p class="case-kicker">Client Engagement No. 06 — FinTech / Mobile</p>
+      <h1 class="case-title">Mobile <em>Banking<br>Platform</em><br>Redesign</h1>
+      <p class="case-subtitle">Led a comprehensive UX overhaul of a mobile banking platform for a major financial institution's partner bank — improving usability, accessibility, and trust signals across core user flows.</p>
+    </div>
+    <div>
+      <div class="case-meta">
+        <div class="case-meta-item">
+          <div class="case-meta-label">Client</div>
+          <div class="case-meta-value">Major Financial Institution</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Confidentiality</div>
+          <div class="case-meta-value">NDA Protected</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Domain</div>
+          <div class="case-meta-value">FinTech / Mobile Banking</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Platform</div>
+          <div class="case-meta-value">iOS & Android</div>
+        </div>
+      </div>
+      <div style="margin-top:24px;">
+        <div class="role-tags">
+          <span class="tag">UX Design</span>
+          <span class="tag">Product Management</span>
+          <span class="tag">User Research</span>
+          <span class="tag">Information Architecture</span>
+          <span class="tag">Mobile Design</span>
+          <span class="tag">Financial Services</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="case-body">
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Context</div>
+      <div class="case-section-content">
+        <h3>The Opportunity</h3>
+        <p>Mobile banking has become the primary banking interface for the majority of retail customers. When a platform's mobile experience is confusing, untrustworthy, or frustrating — it directly erodes confidence in the institution itself. For a bank's partner institution, this is an existential UX problem, not just a design inconvenience.</p>
+        <p>The existing mobile banking app had grown organically over several years — adding features without a coherent UX strategy — resulting in a fragmented, difficult-to-navigate experience that generated high customer service contact rates and poor satisfaction scores. The engagement centered on a principled redesign: simplify, unify, and rebuild trust through design.</p>
+
+        <div class="pull-quote">
+          <p>"Banking is trust made visible. Every design decision — color, typography, spacing, flow — either builds that trust or erodes it."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">My Role</div>
+      <div class="case-section-content">
+        <h3>Scope of Engagement</h3>
+        <p>I was engaged to lead the UX design effort — serving as the bridge between user research findings, business requirements from the institutional client, and the design system needed to support the rebuild. My responsibilities spanned from early audit work through validated design deliverables.</p>
+        <ul>
+          <li>Conducted comprehensive UX audit of the existing mobile application across all primary user flows</li>
+          <li>Led user research including usability testing sessions with existing customers across demographic groups</li>
+          <li>Synthesized research findings into prioritized opportunity areas and design direction</li>
+          <li>Rebuilt the information architecture from scratch based on observed mental models</li>
+          <li>Designed new interaction patterns for core banking flows: account overview, transfers, payments, and account management</li>
+          <li>Collaborated directly with engineering teams to ensure design feasibility within technical constraints</li>
+          <li>Delivered final design system with component documentation and interaction specs</li>
+          <li>Supported QA review during development to ensure design fidelity</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Process</div>
+      <div class="case-section-content">
+        <h3>Design Methodology</h3>
+        <p>The redesign followed a structured double-diamond process — but the real work was in the constraints. Financial services UX operates under regulatory requirements, security mandates, and institutional approval processes that don't apply to most product design contexts.</p>
+
+        <div class="flow-steps">
+          <div class="flow-step">
+            <div class="flow-num">01</div>
+            <div class="flow-content">
+              <h4>Discovery & Audit</h4>
+              <p>Comprehensive audit of the existing app: heuristic evaluation, competitive analysis, and review of customer support data to identify the highest-friction points in the current experience.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">02</div>
+            <div class="flow-content">
+              <h4>User Research</h4>
+              <p>Moderated usability testing with existing customers. Observed task completion rates, error rates, and emotional responses across core banking flows to ground design decisions in real behavior.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">03</div>
+            <div class="flow-content">
+              <h4>Information Architecture</h4>
+              <p>Card sorting and tree testing exercises to rebuild the app's navigational structure around users' actual mental models — not the bank's internal organizational logic.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">04</div>
+            <div class="flow-content">
+              <h4>Design & Iteration</h4>
+              <p>Wireframes → low-fidelity prototype → validated with users → high-fidelity design → stakeholder review → engineering handoff. Multiple iteration cycles with continuous feedback loops.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">05</div>
+            <div class="flow-content">
+              <h4>Design System</h4>
+              <p>Built a comprehensive component library aligned with the institution's brand standards and accessibility requirements — designed to scale across the full product surface.</p>
+            </div>
+          </div>
+          <div class="flow-step">
+            <div class="flow-num">06</div>
+            <div class="flow-content">
+              <h4>Delivery & Handoff</h4>
+              <p>Delivered annotated design specs, component documentation, interaction guidelines, and participated in engineering review to ensure accurate implementation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Design Principles</div>
+      <div class="case-section-content">
+        <h3>What Guided Every Decision</h3>
+        <p>Rather than designing from visual preferences, the redesign was grounded in a set of design principles derived directly from user research — ensuring every tradeoff could be evaluated against a shared framework.</p>
+        <ul>
+          <li><strong>Clarity over completeness:</strong> Users don't need to see everything at once. Progressive disclosure and clear information hierarchy reduce cognitive load at every screen.</li>
+          <li><strong>Trust is earned in milliseconds:</strong> Visual design, motion, and typography work together to signal reliability and institutional credibility before users read a single word.</li>
+          <li><strong>Error prevention over error recovery:</strong> Financial errors are high-stakes. The design invests heavily in confirmation flows, clear labels, and safeguards that prevent mistakes rather than just recovering from them.</li>
+          <li><strong>Accessibility as baseline:</strong> WCAG compliance is a floor, not a ceiling. Designing for the broadest range of users produces a better experience for everyone.</li>
+          <li><strong>Consistency builds confidence:</strong> Predictable patterns reduce anxiety. Users who know where to look — and trust that the experience will behave consistently — engage more deeply with the product.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Constraints</div>
+      <div class="case-section-content">
+        <h3>What Made Financial Services UX Unique</h3>
+        <p>Banking UX operates under a layer of constraints that consumer product design rarely encounters — and navigating these constraints while still delivering a meaningfully improved user experience required creative problem-solving and strong stakeholder management.</p>
+        <ul>
+          <li>Regulatory requirements governing information disclosure, consent flows, and accessibility</li>
+          <li>Security mandates that shape authentication flows, session management, and data display</li>
+          <li>Legacy system limitations that constrained what was technically feasible in scope</li>
+          <li>Multi-stakeholder approval process across design, legal, compliance, and executive layers</li>
+          <li>Consistency requirements with the parent institution's broader product design language</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Outcomes</div>
+      <div class="case-section-content">
+        <h3>Impact</h3>
+        <p>Due to NDA obligations, specific quantitative metrics and client-identifying details cannot be disclosed. General outcome indicators from the engagement:</p>
+
+        <div class="metrics-strip">
+          <div class="metric-item">
+            <div class="metric-num">↑</div>
+            <div class="metric-label">Task Completion Rate in Testing</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-num">↓</div>
+            <div class="metric-label">User Error Rate</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-num">↑</div>
+            <div class="metric-label">Satisfaction Scores</div>
+          </div>
+          <div class="metric-item">
+            <div class="metric-num">✓</div>
+            <div class="metric-label">WCAG AA Compliance Achieved</div>
+          </div>
+        </div>
+
+        <ul style="margin-top:24px;">
+          <li>Delivered a validated, production-ready design system covering all core banking flows</li>
+          <li>Measurable improvement in key usability metrics across tested user populations</li>
+          <li>Successfully navigated compliance and legal review with zero major required reworks</li>
+          <li>Earned stakeholder confidence for subsequent design phases of the platform roadmap</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Reflection</div>
+      <div class="case-section-content">
+        <h3>What I Took Away</h3>
+        <p>This engagement taught me how to design inside institutional complexity without losing sight of the user. It sharpened my ability to manage stakeholders across functions, present design rationale to non-design audiences, and navigate the gap between ideal design and real-world delivery constraints. Financial services is one of the most demanding UX environments — and one of the most rewarding when you get it right.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="nav-case">
+    <a href="apple-project.html">← Apple Project</a>
+    <a href="about.html">Next: About →</a>
+  </div>
+
+  <footer>
+    <span class="footer-name">Kameron Nelson</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <span class="footer-copy">© 2024 Kameron Nelson</span>
+  </footer>
+</main>
+
+</body>
+</html>

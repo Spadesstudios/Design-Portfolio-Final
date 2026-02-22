@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spades Event Production — Kameron Nelson</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .spades-icon {
+      font-size: 200px;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      color: var(--cream-dark);
+      line-height: 1;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+    .brand-palette {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .swatch {
+      width: 48px;
+      height: 48px;
+      border-radius: 4px;
+      position: relative;
+    }
+    .swatch span {
+      position: absolute;
+      bottom: -22px;
+      left: 0;
+      font-size: 9px;
+      letter-spacing: 0.1em;
+      color: var(--ink-light);
+      white-space: nowrap;
+    }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+      margin-top: 24px;
+    }
+    .service-item {
+      background: var(--cream);
+      padding: 24px;
+    }
+    .service-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 8px;
+    }
+    .service-desc {
+      font-size: 12px;
+      font-weight: 300;
+      color: var(--ink-light);
+      line-height: 1.6;
+    }
+    .nav-case {
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 64px;
+      border-bottom: 1px solid var(--rule);
+      background: var(--white);
+    }
+    .nav-prev-next {
+      display: flex;
+      gap: 32px;
+    }
+    .nav-prev-next a {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--ink-light);
+      transition: color 0.2s;
+    }
+    .nav-prev-next a:hover { color: var(--gold); }
+    @media(max-width:900px){
+      .service-grid{grid-template-columns:1fr;}
+      .nav-case{padding:20px 24px;}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">K<span>.</span>N</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#work" class="active">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="about.html#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="this.parentElement.querySelector('.nav-links').style.display = this.parentElement.querySelector('.nav-links').style.display === 'flex' ? 'none' : 'flex'">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+  <a class="back-link" href="index.html">
+    ← Back to All Work
+  </a>
+
+  <div class="case-hero fade-in">
+    <div class="case-hero-left">
+      <p class="case-kicker">Venture No. 01 — Event Production</p>
+      <h1 class="case-title">Spades <em>Event<br>Production</em></h1>
+      <p class="case-subtitle">An event production group built from concept to execution — fusing operational discipline with creative vision to produce memorable live experiences.</p>
+    </div>
+    <div>
+      <div class="case-meta">
+        <div class="case-meta-item">
+          <div class="case-meta-label">Type</div>
+          <div class="case-meta-value">Founded Venture</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Role</div>
+          <div class="case-meta-value">Founder & Creative Director</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Disciplines</div>
+          <div class="case-meta-value">Branding, Ops, PM, Creative</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Status</div>
+          <div class="case-meta-value">Active</div>
+        </div>
+      </div>
+      <div style="margin-top:24px;">
+        <div class="role-tags">
+          <span class="tag">Brand Identity</span>
+          <span class="tag">Event Production</span>
+          <span class="tag">Project Management</span>
+          <span class="tag">Graphic Design</span>
+          <span class="tag">Client Relations</span>
+          <span class="tag">Logistics</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="case-body">
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Overview</div>
+      <div class="case-section-content">
+        <h3>What is Spades?</h3>
+        <p>Spades is an event production group built from the ground up — handling everything from initial concept and venue sourcing to day-of logistics and post-event documentation. The business was founded with the belief that events should be executed with the same precision and intentionality as any world-class product.</p>
+        <p>As Founder and Creative Director, I was responsible for every layer of the business: establishing the brand, developing operational frameworks, managing client relationships, and directing creative output across all events.</p>
+
+        <div class="pull-quote">
+          <p>"Great events don't happen by accident — they're engineered, designed, and delivered with intent."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Brand Building</div>
+      <div class="case-section-content">
+        <h3>Identity & Visual Language</h3>
+        <p>The Spades brand was built around a core tension: sharp professionalism meeting bold creative energy. The spade suit symbol became the anchor of the visual identity — a mark that communicates precision, edge, and a certain unavoidable confidence.</p>
+        <p>Brand deliverables I developed included:</p>
+        <ul>
+          <li>Full logo system — primary, secondary, and icon marks with usage guidelines</li>
+          <li>Brand color palette, typography hierarchy, and tone-of-voice documentation</li>
+          <li>Marketing collateral including flyers, social templates, and stage graphics</li>
+          <li>Promotional photography and event photography direction</li>
+          <li>Client-facing pitch decks and proposal templates</li>
+        </ul>
+
+        <div class="brand-palette" style="margin-top: 32px;">
+          <div>
+            <div class="swatch" style="background:#1A1A1A;"><span>#1A1A1A</span></div>
+          </div>
+          <div style="margin-left: 12px;">
+            <div class="swatch" style="background:#B8945A;"><span>#B8945A</span></div>
+          </div>
+          <div style="margin-left: 12px;">
+            <div class="swatch" style="background:#F4EFE6; border: 1px solid var(--rule);"><span>#F4EFE6</span></div>
+          </div>
+          <div style="margin-left: 12px;">
+            <div class="swatch" style="background:#8A0000;"><span>#8A0000</span></div>
+          </div>
+        </div>
+        <p style="margin-top: 48px; font-size: 12px; color: var(--rule);">Core brand palette — representative direction</p>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Operations</div>
+      <div class="case-section-content">
+        <h3>Production & Project Management</h3>
+        <p>Running events requires tight project management — coordinating vendors, talent, venues, timelines, and clients simultaneously while managing the inevitable chaos of live production. I built internal systems to handle this complexity.</p>
+        <ul>
+          <li>Developed standardized project intake and scoping process for new events</li>
+          <li>Created master production timelines with critical path dependencies mapped</li>
+          <li>Established vendor relationships and negotiation frameworks</li>
+          <li>Built run-of-show (ROS) documentation and day-of briefing systems</li>
+          <li>Post-event review process for continuous operational improvement</li>
+          <li>Client-facing communication cadence and expectation management</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Services</div>
+      <div class="case-section-content">
+        <h3>What Spades Delivers</h3>
+        <div class="service-grid">
+          <div class="service-item">
+            <div class="service-name">Concept & Design</div>
+            <div class="service-desc">Event concepting, theme development, and visual direction from initial brief to execution plan.</div>
+          </div>
+          <div class="service-item">
+            <div class="service-name">Production</div>
+            <div class="service-desc">Full day-of production management, vendor coordination, staging, and on-site direction.</div>
+          </div>
+          <div class="service-item">
+            <div class="service-name">Marketing</div>
+            <div class="service-desc">Pre-event promotional campaign, social content, flyer and digital asset creation.</div>
+          </div>
+          <div class="service-item">
+            <div class="service-name">Photography & Video</div>
+            <div class="service-desc">Event documentation through photography and videography for client deliverables.</div>
+          </div>
+          <div class="service-item">
+            <div class="service-name">Talent Booking</div>
+            <div class="service-desc">Artist and performer sourcing, negotiations, contracts, and day-of hospitality.</div>
+          </div>
+          <div class="service-item">
+            <div class="service-name">Venue & Logistics</div>
+            <div class="service-desc">Venue sourcing, permits, capacity planning, and full logistics management.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Key Learnings</div>
+      <div class="case-section-content">
+        <h3>What Running Spades Taught Me</h3>
+        <p>Building and running an event production company is ultimately a crash course in product thinking — every event is a product with a user journey, a delivery timeline, stakeholders, and success metrics. The discipline of managing live events directly shaped how I approach product management work.</p>
+        <ul>
+          <li>Systems and documentation are the difference between chaos and excellence at scale</li>
+          <li>Creative vision is only as good as the operation behind it</li>
+          <li>Client trust is built through transparency and proactive communication — not just results</li>
+          <li>Every post-mortem made the next event better; iteration applies to events, not just software</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="nav-case">
+    <a href="index.html#work">← All Work</a>
+    <div class="nav-prev-next">
+      <a href="kuntacameo.html">Next: KuntaCameo →</a>
+    </div>
+  </div>
+
+  <footer>
+    <span class="footer-name">Kameron Nelson</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <span class="footer-copy">© 2024 Kameron Nelson</span>
+  </footer>
+</main>
+
+</body>
+</html>

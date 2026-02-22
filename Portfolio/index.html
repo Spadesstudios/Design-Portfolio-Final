@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kameron Nelson — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .hero-right-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .hero-top-right {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .hero-bottom-right {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      align-items: flex-start;
+    }
+    .hero-divider {
+      width: 100%;
+      height: 1px;
+      background: var(--rule);
+      margin: 40px 0;
+    }
+    .intro-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.65;
+      color: var(--ink-light);
+      max-width: 400px;
+    }
+    .intro-text em { font-style: italic; color: var(--gold); }
+    .hero-stats {
+      display: flex;
+      gap: 40px;
+      margin-top: 16px;
+    }
+    .stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 42px;
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 4px;
+    }
+    .overview-strip {
+      padding: 0 64px;
+      border-bottom: 1px solid var(--rule);
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
+    .overview-item {
+      padding: 24px 0;
+      border-right: 1px solid var(--rule);
+      padding-right: 24px;
+      padding-left: 24px;
+      text-align: center;
+    }
+    .overview-item:first-child { padding-left: 0; text-align: left; }
+    .overview-item:last-child { border-right: none; }
+    .overview-label {
+      font-size: 9px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .overview-value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 15px;
+      font-weight: 400;
+    }
+    .section-intro {
+      padding: 64px 64px 48px;
+      max-width: 600px;
+    }
+    .section-intro p {
+      font-size: 15px;
+      font-weight: 300;
+      color: var(--ink-light);
+      line-height: 1.8;
+    }
+    @media (max-width: 900px) {
+      .overview-strip { grid-template-columns: 1fr 1fr 1fr; padding: 0 24px; }
+      .section-intro { padding: 48px 24px; }
+      .hero-stats { gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">K<span>.</span>N</a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="index.html#work">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="about.html#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="this.parentElement.querySelector('.nav-links').style.display = this.parentElement.querySelector('.nav-links').style.display === 'flex' ? 'none' : 'flex'">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+  <section class="hero">
+    <div class="hero-left">
+      <p class="hero-issue fade-in fade-in-1">Portfolio — Vol. I</p>
+      <h1 class="hero-name fade-in fade-in-2">
+        Kameron<br><em>Nelson</em>
+      </h1>
+      <p class="hero-descriptor fade-in fade-in-3">Builder. Strategist. Creative.</p>
+      <ul class="hero-disciplines fade-in fade-in-4">
+        <li>Product Management</li>
+        <li>Project Management</li>
+        <li>UI / UX Design</li>
+        <li>Branding &amp; Identity</li>
+        <li>Graphic Design</li>
+        <li>Photography</li>
+      </ul>
+      <div class="hero-divider"></div>
+      <a href="#work" class="hero-cta fade-in" style="animation-delay:0.7s">
+        View Selected Work
+        <svg width="16" height="8" viewBox="0 0 16 8" fill="none">
+          <path d="M0 4h14M11 1l3 3-3 3" stroke="currentColor" stroke-width="1"/>
+        </svg>
+      </a>
+    </div>
+    <div class="hero-right">
+      <div class="hero-right-inner fade-in fade-in-2">
+        <div class="hero-top-right">
+          <span class="hero-vol">Kameron Nelson — 2024</span>
+        </div>
+        <div class="hero-bottom-right">
+          <p class="intro-text">
+            A multidisciplinary creative and strategist with a track record of building brands, products, and experiences from the ground up — and scaling them for impact.
+          </p>
+          <div class="hero-stats">
+            <div>
+              <div class="stat-num">6+</div>
+              <div class="stat-label">Years Active</div>
+            </div>
+            <div>
+              <div class="stat-num">9</div>
+              <div class="stat-label">Projects</div>
+            </div>
+            <div>
+              <div class="stat-num">3</div>
+              <div class="stat-label">Ventures</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="overview-strip">
+    <div class="overview-item">
+      <div class="overview-label">Based In</div>
+      <div class="overview-value">United States</div>
+    </div>
+    <div class="overview-item">
+      <div class="overview-label">Available For</div>
+      <div class="overview-value">Full-Time / Contract</div>
+    </div>
+    <div class="overview-item">
+      <div class="overview-label">Focus</div>
+      <div class="overview-value">Product &amp; Strategy</div>
+    </div>
+    <div class="overview-item">
+      <div class="overview-label">Industry</div>
+      <div class="overview-value">Tech / Creative / Fin</div>
+    </div>
+    <div class="overview-item">
+      <div class="overview-label">Portfolio</div>
+      <div class="overview-value">Vol. I, 2024</div>
+    </div>
+    <div class="overview-item">
+      <div class="overview-label">Status</div>
+      <div class="overview-value">Open to Work</div>
+    </div>
+  </div>
+
+  <div id="work">
+    <div class="section-header">
+      <span class="section-number">01</span>
+      <h2 class="section-title">Selected<br><em>Work</em></h2>
+    </div>
+    <div class="section-intro">
+      <p>Three ventures built from concept to operation, one nonprofit, and two confidential engagements with Fortune 500 companies — each representing a distinct discipline and depth of ownership.</p>
+    </div>
+
+    <div class="work-grid">
+
+      <!-- FEATURED: Spades -->
+      <a class="work-card featured" href="spades.html">
+        <div class="work-card-content">
+          <div class="work-card-label">Venture — Event Production</div>
+          <h2 class="work-card-title">Spades <em>Event<br>Production</em></h2>
+          <p class="work-card-desc">A full-service event production group built from scratch — from brand identity and logistics frameworks to live execution and client relationships.</p>
+          <div class="work-card-meta">
+            <span class="tag">Branding</span>
+            <span class="tag">Ops</span>
+            <span class="tag">Project Mgmt</span>
+            <span class="tag">Creative Direction</span>
+          </div>
+        </div>
+        <div style="display:flex;align-items:flex-end;justify-content:flex-end;">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:120px;font-weight:300;color:var(--cream-dark);line-height:1;">♠</div>
+        </div>
+      </a>
+
+      <!-- Kuntacameo -->
+      <a class="work-card" href="kuntacameo.html">
+        <div class="work-card-label">Venture — Photo / Video</div>
+        <h2 class="work-card-title"><em>Kunta</em>Cameo</h2>
+        <p class="work-card-desc">Photography, videography, and equipment rental service built with intentional branding and a systems-first operational model.</p>
+        <div class="work-card-meta">
+          <span class="tag">Photography</span>
+          <span class="tag">Branding</span>
+          <span class="tag">UI/UX</span>
+        </div>
+        <span class="work-card-number">02</span>
+      </a>
+
+      <!-- Rapmvmnt -->
+      <a class="work-card" href="rapmvmnt.html">
+        <div class="work-card-label">Venture — Apparel</div>
+        <h2 class="work-card-title">Rap<em>mvmnt</em></h2>
+        <p class="work-card-desc">A culture-driven apparel brand with a distinct visual language, grounded in community identity and movement-led marketing.</p>
+        <div class="work-card-meta">
+          <span class="tag">Graphic Design</span>
+          <span class="tag">Brand Identity</span>
+          <span class="tag">Strategy</span>
+        </div>
+        <span class="work-card-number">03</span>
+      </a>
+
+      <!-- Nonprofit -->
+      <a class="work-card" href="nonprofit.html">
+        <div class="work-card-label">Nonprofit — Founder</div>
+        <h2 class="work-card-title"><em>Community</em><br>Initiative</h2>
+        <p class="work-card-desc">Founded and led a nonprofit from ground up — handling governance, brand development, program design, and community outreach.</p>
+        <div class="work-card-meta">
+          <span class="tag">Leadership</span>
+          <span class="tag">Branding</span>
+          <span class="tag">Product</span>
+        </div>
+        <span class="work-card-number">04</span>
+      </a>
+
+      <!-- Apple -->
+      <a class="work-card nda" href="apple-project.html">
+        <div class="work-card-label">Client Project</div>
+        <h2 class="work-card-title">Assisted <em>Living</em><br>Technology</h2>
+        <p class="work-card-desc">Designed a smart home accessibility solution for Alzheimer's patients and assisted living environments. Confidential client engagement.</p>
+        <div class="work-card-meta">
+          <span class="tag">Product Mgmt</span>
+          <span class="tag">UI/UX</span>
+          <span class="tag">Research</span>
+          <span class="tag">Hardware</span>
+        </div>
+        <span class="work-card-number">05</span>
+      </a>
+
+      <!-- JP Morgan -->
+      <a class="work-card nda" href="jpmorgan-project.html">
+        <div class="work-card-label">Client Project</div>
+        <h2 class="work-card-title">Mobile <em>Banking</em><br>Redesign</h2>
+        <p class="work-card-desc">Led UX overhaul of a partner bank's mobile banking platform for a major financial institution. Confidential client engagement.</p>
+        <div class="work-card-meta">
+          <span class="tag">UI/UX</span>
+          <span class="tag">Product</span>
+          <span class="tag">FinTech</span>
+          <span class="tag">Mobile</span>
+        </div>
+        <span class="work-card-number">06</span>
+      </a>
+
+    </div>
+  </div>
+
+  <footer>
+    <span class="footer-name">Kameron Nelson</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <span class="footer-copy">© 2024 Kameron Nelson</span>
+  </footer>
+</main>
+
+</body>
+</html>

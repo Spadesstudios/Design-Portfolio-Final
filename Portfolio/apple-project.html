@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assisted Living Technology — Kameron Nelson</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .nav-case {
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 64px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .nav-case a {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--ink-light);
+      transition: color 0.2s;
+    }
+    .nav-case a:hover { color: var(--gold); }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+      margin-top: 24px;
+    }
+    .step-item {
+      background: var(--cream);
+      padding: 24px 20px;
+      text-align: center;
+    }
+    .step-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 36px;
+      font-weight: 300;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .step-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 6px;
+    }
+    .step-desc {
+      font-size: 11px;
+      font-weight: 300;
+      color: var(--ink-light);
+      line-height: 1.6;
+    }
+    .challenge-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--rule);
+      border: 1px solid var(--rule);
+      margin-top: 24px;
+    }
+    .challenge-col {
+      background: var(--cream);
+      padding: 28px;
+    }
+    .challenge-col h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 16px;
+      color: var(--gold);
+    }
+    @media(max-width:900px){
+      .nav-case{padding:20px 24px; flex-wrap:wrap; gap:12px;}
+      .process-steps{grid-template-columns:1fr 1fr;}
+      .challenge-row{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">K<span>.</span>N</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#work" class="active">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="about.html#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" onclick="this.parentElement.querySelector('.nav-links').style.display = this.parentElement.querySelector('.nav-links').style.display === 'flex' ? 'none' : 'flex'">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<main>
+  <a class="back-link" href="index.html">← Back to All Work</a>
+
+  <!-- NDA DISCLAIMER -->
+  <div class="nda-banner">
+    <div class="nda-icon">⚖</div>
+    <div class="nda-text">
+      <strong>Confidential Engagement — NDA in Effect.</strong> The specifics of this client relationship, project deliverables, proprietary technology, and internal processes are protected under a non-disclosure agreement. This case study presents only high-level process, approach, and outcomes that do not constitute disclosure of confidential information. No proprietary assets, unreleased features, internal documentation, or confidential client data are shared.
+    </div>
+  </div>
+
+  <div class="case-hero fade-in">
+    <div class="case-hero-left">
+      <p class="case-kicker">Client Engagement No. 05 — Accessibility Technology</p>
+      <h1 class="case-title">Assisted <em>Living<br>Technology</em><br>Initiative</h1>
+      <p class="case-subtitle">Designed a smart home accessibility pod for Alzheimer's patients and assisted living residents — reducing fall risk and supporting safer independent movement within personal care spaces.</p>
+    </div>
+    <div>
+      <div class="case-meta">
+        <div class="case-meta-item">
+          <div class="case-meta-label">Client</div>
+          <div class="case-meta-value">Major Consumer Technology Company</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Confidentiality</div>
+          <div class="case-meta-value">NDA Protected</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Domain</div>
+          <div class="case-meta-value">Health Technology / Accessibility</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Platform</div>
+          <div class="case-meta-value">Smart Home / IoT</div>
+        </div>
+      </div>
+      <div style="margin-top:24px;">
+        <div class="role-tags">
+          <span class="tag">Product Management</span>
+          <span class="tag">UX Research</span>
+          <span class="tag">Interaction Design</span>
+          <span class="tag">Accessibility</span>
+          <span class="tag">Healthcare</span>
+          <span class="tag">Hardware + Software</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="case-body">
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Context</div>
+      <div class="case-section-content">
+        <h3>The Problem Space</h3>
+        <p>Falls are the leading cause of injury-related death among adults over 65, and the risk is dramatically elevated for Alzheimer's and dementia patients — who experience spatial disorientation, impaired balance, and difficulty navigating even familiar environments. Assisted living facilities struggle to monitor and mitigate this risk without compromising resident dignity and independence.</p>
+        <p>This engagement centered on designing a solution that could be deployed in a resident's personal living space — a HomePod-class device that used ambient technology to actively support safer movement, without the intrusive feel of surveillance or institutional monitoring equipment.</p>
+
+        <div class="pull-quote">
+          <p>"The user isn't choosing this technology. It's chosen for them by people who care about them. Designing for that reality changes everything."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">My Role</div>
+      <div class="case-section-content">
+        <h3>Responsibilities on the Engagement</h3>
+        <p>I was brought in to drive the product and UX work — bridging the gap between user needs research and the technical product definition. My scope of work spanned the full design process from user research through validated prototypes.</p>
+        <ul>
+          <li>Led user research sessions with Alzheimer's patients, caregivers, and assisted living facility staff</li>
+          <li>Synthesized research into behavioral insights and design principles specific to this user population</li>
+          <li>Developed user journey maps covering both the resident and caregiver experience</li>
+          <li>Defined product requirements and feature prioritization in collaboration with engineering</li>
+          <li>Designed interaction models for ambient, non-screen-dependent experiences</li>
+          <li>Created and tested prototypes with actual users in assisted living environments</li>
+          <li>Delivered product specifications, interaction guidelines, and research documentation</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Design Process</div>
+      <div class="case-section-content">
+        <h3>How We Approached It</h3>
+        <p>This project demanded a research-first approach. Designing for Alzheimer's patients means designing for users who cannot always advocate for themselves, may not remember their experience during testing, and respond to the world very differently than a typical technology user. Every assumption required validation.</p>
+
+        <div class="process-steps">
+          <div class="step-item">
+            <div class="step-num">01</div>
+            <div class="step-name">Discovery</div>
+            <div class="step-desc">Ethnographic research with residents, caregivers, and facility management to map the real-world problem space</div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">02</div>
+            <div class="step-name">Define</div>
+            <div class="step-desc">Synthesized research into design principles, user personas, and measurable product success criteria</div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">03</div>
+            <div class="step-name">Design</div>
+            <div class="step-desc">Iterative concept design focused on ambient interaction, dignity-preserving monitoring, and caregiver integration</div>
+          </div>
+          <div class="step-item">
+            <div class="step-num">04</div>
+            <div class="step-name">Validate</div>
+            <div class="step-desc">Prototype testing in live assisted living environments with continuous iteration based on observed behavior</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Design Challenges</div>
+      <div class="case-section-content">
+        <h3>What Made This Hard</h3>
+        <p>This engagement surfaced design challenges I hadn't encountered in previous product work — each requiring a fundamentally different design lens than typical consumer product work.</p>
+
+        <div class="challenge-row">
+          <div class="challenge-col">
+            <h4>User Advocacy</h4>
+            <p class="offering-desc" style="font-size:14px; font-weight:300; color:var(--ink-light); line-height:1.7;">Alzheimer's patients often cannot articulate their needs or evaluate their experience. Research required observation over self-reporting, and design validation required proxy feedback from caregivers combined with direct behavioral observation.</p>
+          </div>
+          <div class="challenge-col">
+            <h4>Dignity by Design</h4>
+            <p class="offering-desc" style="font-size:14px; font-weight:300; color:var(--ink-light); line-height:1.7;">Safety technology in elder care often erodes dignity — residents feel monitored, infantilized, or surveilled. Every design decision had to balance safety function with preservation of personal autonomy and dignity.</p>
+          </div>
+          <div class="challenge-col">
+            <h4>Multi-User Experience</h4>
+            <p class="offering-desc" style="font-size:14px; font-weight:300; color:var(--ink-light); line-height:1.7;">The product served three distinct users: the resident, the caregiver, and the facility administrator — each with fundamentally different needs, mental models, and comfort levels with technology.</p>
+          </div>
+          <div class="challenge-col">
+            <h4>Ambient Interaction</h4>
+            <p class="offering-desc" style="font-size:14px; font-weight:300; color:var(--ink-light); line-height:1.7;">Designing a device that helps without requiring active engagement — the user shouldn't have to think about the technology for it to work. Ambient interaction design is a distinct discipline with little room for error.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Outcomes</div>
+      <div class="case-section-content">
+        <h3>What Was Achieved</h3>
+        <p>Due to NDA obligations, specific quantitative outcomes, product details, and client-specific results cannot be disclosed. At a high level, the engagement concluded with:</p>
+        <ul>
+          <li>A validated product concept with strong research backing across multiple user groups</li>
+          <li>Comprehensive UX documentation including journey maps, interaction specs, and design principles</li>
+          <li>A tested prototype that demonstrated measurable improvement in target safety outcomes during validation sessions</li>
+          <li>Research findings that meaningfully shaped the product roadmap for subsequent development phases</li>
+          <li>Cross-functional alignment between design, engineering, and clinical advisory stakeholders</li>
+        </ul>
+
+        <div class="pull-quote">
+          <p>"This was the most human-centered design work I've ever done. When the stakes are someone's safety and dignity, design rigor isn't optional."</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-section fade-in">
+      <div class="case-section-label">Reflection</div>
+      <div class="case-section-content">
+        <h3>What This Taught Me</h3>
+        <p>Working on this project fundamentally changed how I think about user research and design ethics. It forced me to develop a deeper empathy practice — one grounded in observation and behavior rather than stated preferences — and to hold both the functional and emotional dimensions of a product with equal weight. It's the kind of product work I want to do more of.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="nav-case">
+    <a href="nonprofit.html">← Nonprofit</a>
+    <a href="jpmorgan-project.html">Next: JP Morgan →</a>
+  </div>
+
+  <footer>
+    <span class="footer-name">Kameron Nelson</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <span class="footer-copy">© 2024 Kameron Nelson</span>
+  </footer>
+</main>
+
+</body>
+</html>
